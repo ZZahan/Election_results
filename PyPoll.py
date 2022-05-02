@@ -5,13 +5,8 @@
 # 3. The percentage of votes each candidate won
 # 4. The total number of votes each candidate won
 # 5. The winner of the election based on popular voie.
-import csv
-
-import os
 
 # Assign a variable tof the file load and the path.
-
-
 #file_to_load = os.path.join"..", "Resources/election_results.csv")
 
 
@@ -37,8 +32,6 @@ import os
 # exit(0)
 
 #Assign a variable for the file to load and the path.
-
-file_to_load = os.path.join("Resources", "election_results.csv")
 
 #Open the election results and read the file.
 
@@ -75,11 +68,11 @@ file_to_load = os.path.join("Resources", "election_results.csv")
     
     # Create a filename variable to a direct or indirect pth to the file.
     
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+# file_to_save = os.path.join("analysis", "election_analysis.txt")
     
     
     # using the with statment open the file as text file.
-with open(file_to_save, "w") as txt_file:
+# with open(file_to_save, "w") as txt_file:
         
     
         #Write saem data to the file.
@@ -246,16 +239,16 @@ with open(file_to_save, "w") as txt_file:
                 
                     f"Winner Vote Count: {winning_count:,}\n"
                 
-                    f"Winning Percentage: {winning_percentage:.1f}%\n"
+                f"Winning Percentage: {winning_percentage:.1f}%\n"
                 
-                    f"------------------------------\n")
+                f"------------------------------\n")
                 
-        print(winning_candidate_summary)
+    print(winning_candidate_summary)
         
         
-        # Save the candidate results to our text file.
+    # Save the candidate results to our text file.
         
-        txt_file.write(candidate_results)
+    txt_file.write(candidate_results)
         
                
         
